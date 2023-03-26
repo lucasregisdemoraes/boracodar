@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Clima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section id="temperature-now">
+            <p class="location">
+                <img src="./assets/pin.svg" alt="icone de localização" />
+                São Paulo, SP
+            </p>
+            <div class="temperature">
+                <span class="temperature-now">18<sup>°C</sup></span>
+                <div class="max-min">
+                    <span class="max">22°</span>
+                    <span class="min">16°</span>
+                </div>
+            </div>
+            <div class="statistics">
+                <div class="statistic">
+                    <img src="./assets/wind.svg" alt="icone de vento">
+                    <div class="info">
+                        <p class="title">Vento</p>
+                        <p class="number">17<span>km/h</span></p>
+                    </div>
+                </div>
+                <div class="statistic">
+                    <img src="./assets/humidity.svg" alt="icone de umidade">
+                    <div class="info">
+                        <p class="title">Umidade</p>
+                        <p class="number">31<span>%</span></p>
+                    </div>
+                </div>
+                <div class="statistic">
+                    <img src="./assets/rain.svg" alt="icone de chuva">
+                    <div class="info">
+                        <p class="title">Chuva</p>
+                        <p class="number">10<span>%</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="air-quality">
+            <h2 class="section-title">
+                <img src="./assets/leaf.svg" alt="icone de folha de arvore">
+                Qualidade do Ar
+            </h2>
+            <div class="air-quality">
+                <p class="quality">Boa</p>
+                <p class="number">21</p>
+            </div>
+            <ul class="air-elements">
+                <li>
+                    <span class="number">12.9</span>
+                    <span class="element">PM2.5</span>
+                </li>
+                <li>
+                    <span class="number">12.9</span>
+                    <span class="element">PM10</span>
+                </li>
+                <li>
+                    <span class="number">2.1</span>
+                    <span class="element">SO<sub>2</sub></span>
+                </li>
+                <li>
+                    <span class="number">1.4</span>
+                    <span class="element">NO<sub>2</sub></span>
+                </li>
+                <li>
+                    <span class="number">21.2</span>
+                    <span class="element">O<sub>3</sub></span>
+                </li>
+                <li>
+                    <span class="number">0.7</span>
+                    <span class="element">CO</span>
+                </li>
+            </ul>
+        </section>
+        <section id="sun-time">
+            <h2 class="section-title">
+                <img src="./assets/time.svg" alt="icone de sol">
+                Horário do sol
+            </h2>
+            <div class="sun-chart-wrapper">
+                <div class="sun-chart">
+                    <div class="chart">
+                        <img src="./assets/sun-chart.svg" alt="imagem de um gráfico semi circulo com traços">
+                    </div>
+                    <span class="now">16:01</span>
+                </div>
+            </div>
+            <div class="time">
+                <span class="sunrise">06:12</span>
+                <span class="sunset">18:52</span>
+            </div>
+        </section>
+        <section id="week-weather">
+            <ul>
+                <li>
+                    <p class="day">Amanhã</p>
+                    <img src="./assets/weather-cloudy.svg" alt="icone de nublado">
+                    <div class="max-min">
+                        <span class="max">21°</span>
+                        <span class="min">16°</span>
+                    </div>
+                </li>
+                <li>
+                    <p class="day">Sexta-Feira</p>
+                    <img src="./assets/weather-sunny.svg" alt="icone de ensolarado">
+                    <div class="max-min">
+                        <span class="max">28°</span>
+                        <span class="min">20°</span>
+                    </div>
+                </li>
+                <li>
+                    <p class="day">Sábado</p>
+                    <img src="./assets/weather-rainy.svg" alt="icone de chuvoso">
+                    <div class="max-min">
+                        <span class="max">25°</span>
+                        <span class="min">21°</span>
+                    </div>
+                </li>
+                <li>
+                    <p class="day">Domingo</p>
+                    <img src="./assets/weather-stormy.svg" alt="icone de tempestuoso">
+                    <div class="max-min">
+                        <span class="max">20°</span>
+                        <span class="min">14°</span>
+                    </div>
+                </li>
+                <li>
+                    <p class="day">Segunda-Feira</p>
+                    <img src="./assets/weather-partly-cloudy.svg" alt="icone de parcialmente nublado">
+                    <div class="max-min">
+                        <span class="max">24°</span>
+                        <span class="min">18°</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

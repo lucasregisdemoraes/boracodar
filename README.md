@@ -1,12 +1,12 @@
-# #boraCodar
+<h1 align="center">#boraCodar</h1>
 
 <p align="center">
     Projetos #boraCodar da Rocketseat 
     <br>
     <br>
-    Clique no nome do projeto para ver o código
+    Clique no <strong>nome do projeto</strong> para ver o código
     <br>
-    Clique na imagem do projeto para ver a página
+    Clique na <strong>imagem do projeto</strong> para ver a página
     <br>
 <table>
     <thead>
@@ -57,7 +57,14 @@
             <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/conversor-de-moedas">Conversor de moedas</a></td>
             <td align="center">✅</td>
             <td align="center">❌</td>
-            <td align="center" ><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/conversor-de-moedas"><img width="300px" src="./previews/conversor-de-moedas.jpg" /></a></td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/conversor-de-moedas"><img width="300px" src="./previews/conversor-de-moedas.jpg" /></a></td>
+        </tr>
+                <tr>
+            <td>10</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/pagina-de-clima">Página de Clima</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pagina-de-clima"><img width="300px" src="./previews/pagina-de-clima.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>

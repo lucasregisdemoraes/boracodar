@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --text-main-color: white;
+    --text-second-color: #C2BFF4;
+    --text-third-color: #DAD8F7;
+    --text-fourth-color: #E7E6FB;
+    --text-highlight-color: #87EBCD;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: url(./assets/background.jpg) no-repeat center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "temperature-now temperature-now air-quality sun-time"
+        "temperature-now temperature-now week-weather week-weather";
+    grid-template-columns: 240px 240px 277px 277px;
+    grid-template-rows: 244px 212px;
+    gap: 20px;
+}
+
+main section {
+    border-radius: 15px;
+    background-color: #6D67D0;
+}
+
+main section .section-title {
+    font-size: 16px;
+    color: var(--text-third-color);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 32px auto 0 auto;
+}
+
+/* ===== TEMPERATURE NOW ===== */
+#temperature-now {
+    grid-area: temperature-now;
+    background: url(./assets/bg-temperature-now.jpg) no-repeat;
+    display: grid;
+    background-size: cover;
+    grid-template-rows: max-content 1fr max-content;
+    position: relative;
+}
+
+#temperature-now::after {
+    content: "";
+    background: url(./assets/clouds.svg);
+    position: absolute;
+    height: 176px;
+    width: 176px;
+    top: -56px;
+    left: -56px;
+}
+
+#temperature-now .location {
+    color: var(--text-second-color);
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: 32px 32px 0 auto;
+}
+
+#temperature-now .temperature {
+    text-align: center;
+    color: var(--text-main-color);
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+#temperature-now .temperature .temperature-now {
+    font-size: 88px;
+    position: relative;
+}
+
+#temperature-now .temperature .temperature-now sup {
+    position: absolute;
+    color: var(--text-third-color);
+    left: 100%;
+    top: 20px;
+    font-size: 24px;
+}
+
+#temperature-now .temperature .max-min {
+    font-size: 20px;
+}
+
+#temperature-now .temperature .max-min .min {
+    color: var(--text-second-color);
+}
+
+#temperature-now .statistics {
+    display: flex;
+    gap: 8px;
+    margin: 0 12px 12px 12px;
+}
+
+#temperature-now .statistics .statistic {
+    color: var(--text-fourth-color);
+    flex-grow: 1;
+    background-color: rgba(102, 96, 200, 0.6);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+}
+
+#temperature-now .statistics .statistic img {
+    width: 32px;
+    height: 32px;
+}
+
+#temperature-now .statistics .statistic .title {
+    font-size: 12px;
+}
+
+#temperature-now .statistics .statistic .number {
+    font-size: 18px;
+}
+
+#temperature-now .statistics .statistic .number span {
+    color: var(--text-third-color);
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+/* ===== AIR QUALITY ===== */
+#air-quality {
+    grid-area: air-quality;
+    color: var(--text-fourth-color);
+    padding: 0 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#air-quality .air-quality .quality {
+    font-size: 18px;
+    color: var(--text-highlight-color);
+    font-weight: 700
+}
+
+#air-quality .air-quality .number {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#air-quality .air-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+#air-quality .air-elements li .number {
+    color: var(--text-highlight-color);
+    font-size: 14px;
+    display: block;
+    font-weight: 700;
+}
+
+#air-quality .air-elements li .element {
+    font-size: 12px;
+}
+
+/* ===== SUN TIME ===== */
+#sun-time {
+    grid-area: sun-time;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#sun-time .sun-chart-wrapper {
+    height: 110px;
+    margin-bottom: 42px;
+}
+
+#sun-time .sun-chart-wrapper .sun-chart {
+    --pos-x: 50;
+    width: 216px;
+    height: 216px;
+    position: relative;
+}
+
+#sun-time .sun-chart-wrapper .sun-chart::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #F6C833;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin: -6px;
+
+    position: absolute;
+
+    transform: rotate(calc(1deg * (((100 - var(--pos-x)) / -100) * 180))) translate(106px);
+}
+
+#sun-time .sun-chart-wrapper .sun-chart .chart {
+    width: 216px;
+    height: 108px;
+    overflow: hidden;
+}
+
+#sun-time .sun-chart-wrapper .sun-chart .chart::before {
+    content: "";
+    width: 210px;
+    height: 210px;
+    display: block;
+    border-radius: 50%;
+
+    background: linear-gradient(180deg, rgba(251, 219, 96, 0.2) 0%, rgba(251, 219, 96, 0) 101.89%);
+
+
+    --mask: linear-gradient(0deg, white 50%, transparent 0%);
+    mask: var(--mask);
+    -webkit-mask: var(--mask);
+
+    rotate: calc(1.825deg * var(--pos-x));
+}
+
+#sun-time .sun-chart-wrapper .sun-chart .chart img {
+    width: 216px;
+    position: absolute;
+    top: 0;
+    left: -1%;
+}
+
+#sun-time .sun-chart-wrapper .sun-chart .now {
+    color: var(--text-main-color);
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+
+
+#sun-time .time {
+    font-size: 12px;
+    color: var(--text-main-color);
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    width: 216px;
+    justify-content: space-between;
+}
+
+/* ===== WEEK WEATHER ===== */
+#week-weather {
+    grid-area: week-weather;
+    padding: 40px;
+}
+
+#week-weather ul {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#week-weather ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#week-weather ul li .day {
+    font-size: 14px;
+    color: var(--text-third-color);
+}
+
+#week-weather ul li img {
+    width: 64px;
+    height: 64px;
+}
+
+#week-weather ul li .max-min .max {
+    color: var(--text-main-color);
+}
+
+#week-weather ul li .max-min .min {
+    color: var(--text-second-color);
+}
+
+
+@media (max-width: 1124px) {
+    main {
+        grid-template-areas:
+            "temperature-now air-quality"
+            "temperature-now sun-time"
+            "week-weather week-weather";
+        grid-template-columns: 480px 277px;
+        grid-template-rows: 244px 244px 212px;
+        margin: 75px auto;
+    }
+}
+
+@media (max-width: 824px) {
+    main {
+        grid-template-areas:
+            "temperature-now"
+            "air-quality"
+            "sun-time"
+            "week-weather";
+        grid-template-columns: 480px;
+        grid-template-rows: 456px 244px 244px 212px;
+    }
+
+#air-quality .air-elements {
+    width: 277px;
+    margin: 0 auto;
+}
+}
