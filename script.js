@@ -1,3 +1,5 @@
+// get challenges from ./challenges-list.js
+
 const challengesList = document.querySelector("#challenges")
 const challengesNumberSpan = document.querySelector("#challenges-number span")
 
