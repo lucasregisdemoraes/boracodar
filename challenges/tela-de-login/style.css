@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --purple: #7C3AED;
+  --gray-50: #F8FAFC;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1;
+  --gray-400: #94A3B8;
+  --gray-500: #64748B;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1E293B;
+  --gray-900: #0F172A;
+}
+
+body {
+  background: var(--gray-50);
+  display: flex;
+  min-height: 100vh;
+}
+
+body,
+input,
+button {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 50%;
+  padding: 40px;
+  position: relative;
+}
+
+main .container .logo {
+  width: 160px;
+  position: absolute;
+  top: 25px;
+}
+
+main .container {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+main .container .content .content-texts h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--gray-800);
+}
+
+main .container .content .content-texts p {
+  margin: 16px 0 40px 0;
+  font-size: 16px;
+  color: var(--gray-600);
+}
+
+main .container .content .wrapper+.wrapper {
+  margin-top: 16px;
+}
+
+main .container .content form .wrapper .label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+main .container .content form .wrapper .label-wrapper label {
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+main .container .content form .wrapper .label-wrapper a {
+  font-weight: 600;
+}
+
+main .container .content form .wrapper .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+main .container .content form .wrapper .input-wrapper input {
+  font-family: 'Titillium Web', sans-serif;
+  color: var(--gray-800);
+  background-color: white;
+  padding: 0 12px;
+  font-size: 14px;
+  border: 1px solid var(--gray-200);
+}
+
+main .container .content form .wrapper .input-wrapper input:hover,
+main .container .content form .wrapper .input-wrapper input:focus {
+  border: 1px solid var(--purple);
+  outline: none;
+}
+
+main .container .content form .wrapper .input-wrapper input:disabled {
+  opacity: 0.35;
+}
+
+main .container .content form .wrapper .input-wrapper input,
+main .container .content form button {
+  width: 100%;
+  height: 53px;
+  border-radius: 4px;
+}
+
+main .container .content form .wrapper .input-wrapper input::placeholder {
+  color: var(--gray-400);
+  opacity: 1;
+}
+
+main .container .content form .wrapper .input-wrapper .eye {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+main .container .content form .wrapper .input-wrapper .eye.hide {
+  display: none;
+}
+
+main .container .content form .wrapper .input-wrapper .eye:hover {
+  filter: brightness(1.3);
+}
+
+main .container .content form button {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--purple);
+  border: none;
+  margin: 32px 0;
+  cursor: pointer;
+}
+
+main .container .content form button:hover {
+  filter: brightness(1.3);
+}
+
+main .container .content p {
+  font-size: 16px;
+  color: var(--gray-600);
+}
+
+main .container .content p a {
+  font-weight: 700;
+}
+
+.image-container {
+  width: 50%;
+  background: url(./assets/bg.png) no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 790px) {
+  main {
+    margin: 0 auto;
+    padding: 60px 0;
+    width: 80%;
+  }
+
+  main .container .logo {
+    top: 20px;
+  }
+
+  .image-container {
+    display: none;
+  }
+}

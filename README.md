@@ -59,12 +59,19 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/conversor-de-moedas"><img width="300px" src="./previews/conversor-de-moedas.jpg" /></a></td>
         </tr>
-                <tr>
+        <tr>
             <td>10</td>
             <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/pagina-de-clima">Página de Clima</a></td>
             <td align="center">✅</td>
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pagina-de-clima"><img width="300px" src="./previews/pagina-de-clima.jpg" /></a></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/tela-de-login">Tela de Login</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/tela-de-login"><img width="300px" src="./previews/tela-de-login.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>

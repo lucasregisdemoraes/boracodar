@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <img class="logo" src="./assets/logo.svg" alt="logo" />
+
+            <div class="content">
+                <div class="content-texts">
+                    <h2>Acesse a plataforma</h2>
+                    <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+                </div>
+
+                <form>
+                    <div class="wrapper">
+                        <div class="label-wrapper">
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="label-wrapper">
+                            <label for="email">E-mail</label>
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" name="password" placeholder="Digite sua senha" />
+                            <img src="./assets/eye-on.svg" class="eye" />
+                            <img src="./assets/eye-off.svg" class="eye hide" />
+                        </div>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+                <p>Ainda não tem conta? <a href="#">Inscreva-se</a></p>
+            </div>
+        </div>
+    </main>
+    <div class="image-container"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

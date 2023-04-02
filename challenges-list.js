@@ -6,5 +6,9 @@ const challenges = [
     {
         name: "Página de Clima",
         ref: "pagina-de-clima"
+    },
+    {
+        name: "Tela de Login",
+        ref: "tela-de-login"
     }
 ]
