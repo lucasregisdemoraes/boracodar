@@ -1,0 +1,247 @@
+body,
+ul,
+h1,
+h2,
+h3,
+p,
+button,
+input {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg-color: #7C3AED;
+    --main-bg-color: #FBFAFF;
+
+    --title-color: #403937;
+    --text-color: #756966;
+    --link-color: #CAB3FF;
+    --link-active-color: white;
+
+    --tag-bg-color: #E2D6FF;
+    --tag-text-color: #7C3AED;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    min-height: 100vh;
+}
+
+/* ===== NAV ===== */
+nav {
+    padding: 32px 27px 32px 35px;
+}
+
+nav .logo {
+    height: 56px;
+    margin-bottom: 60px;
+}
+
+nav ul {
+    display: grid;
+    gap: 36px;
+    min-width: 120px;
+}
+
+nav ul li {
+    justify-content: center;
+}
+
+nav ul li a {
+    color: var(--link-color);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 16px;
+}
+
+nav ul li.active a,
+nav ul li a:hover {
+    color: var(--link-active-color);
+    font-weight: 700;
+}
+
+nav ul li a ion-icon {
+    font-size: 20px;
+}
+
+/* ===== MAIN ===== */
+main {
+    flex: 1;
+    margin-top: 4px;
+    background-color: var(--main-bg-color);
+    border-radius: 32px 0px 0px 0px;
+    padding: 48px 56px;
+    display: grid;
+    gap: 32px;
+}
+
+/* ===== Section Title ===== */
+main section.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.title h1 {
+    color: var(--title-color);
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+main section.title h1 img {
+    height: 24px;
+}
+
+main section.title .profile-photo {
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+}
+
+/* ===== Section Filter ===== */
+main section.filter {
+    display: flex;
+    gap: 16px;
+}
+
+main section.filter button {
+    color: var(--link-active-color);
+    font-size: 14px;
+    background-color: var(--bg-color);
+    border: none;
+    height: 48px;
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main section.filter button:hover {
+    filter: brightness(1.2);
+}
+
+main section.filter button ion-icon {
+    font-size: 24px;
+}
+
+main section.filter .input-wrapper {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    box-shadow: 0px 4px 16px rgba(22, 22, 22, 0.1);
+    border: 0.7px solid #E3E3E3;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+main section.filter .input-wrapper:has(input:focus) {
+    outline: 0.2rem black solid;
+}
+
+main section.filter .input-wrapper ion-icon {
+    color: #505059;
+    font-size: 24px;
+}
+
+main section.filter .input-wrapper input {
+    color: #7C7C8A;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+/* ===== Section KanBan ===== */
+main section.kanban {
+    display: flex;
+    gap: 48px;
+    overflow-x: scroll;
+}
+
+main section.kanban .step h2 {
+    color: var(--title-color);
+    font-size: 20px;
+    margin: 24px 0;
+}
+
+main section.kanban .step .cards {
+    display: grid;
+    gap: 24px;
+}
+
+main section.kanban .step .cards .card {
+    background-color: white;
+    width: 320px;
+    box-shadow: 0px 4px 16px #EAE2FD;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+main section.kanban .step .cards .card h3 {
+    color: #403937;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+main section.kanban .step .cards .card p {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+main section.kanban .step .cards .card .tags {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+main section.kanban .step .cards .card .tags .tag {
+    background-color: var(--tag-bg-color);
+    color: var(--tag-text-color);
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+@media (max-width: 700px) {
+    nav {
+        padding: 24px 12px 24px 12px;
+        text-align: center;
+    }
+
+    nav ul {
+        min-width: 80px;
+    }
+
+    nav ul li a {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 18px 26px;
+    }
+
+    main section.title h1 {
+        width: min-content;
+    }
+}

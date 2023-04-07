@@ -10,5 +10,9 @@ const challenges = [
     {
         name: "Tela de Login",
         ref: "tela-de-login"
+    },
+    {
+        name: "KanBan",
+        ref: "kanban"
     }
 ]

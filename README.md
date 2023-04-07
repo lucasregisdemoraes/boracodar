@@ -73,5 +73,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/tela-de-login"><img width="300px" src="./previews/tela-de-login.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/kanban">KanBan</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/kanban"><img width="300px" src="./previews/kanban.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
