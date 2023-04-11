@@ -80,5 +80,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/kanban"><img width="300px" src="./previews/kanban.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/formulario-de-cartao">Formulário de Cartão</a></td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/formulario-de-cartao"><img width="300px" src="./previews/formulario-de-cartao.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>

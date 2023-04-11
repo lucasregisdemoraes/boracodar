@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cartão</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <form id="cc-form">
+            <section id="credit-card">
+                <div class="front"></div>
+                <div class="back"></div>
+            </section>
+            <section id="inputs">
+                <div class="input-wrapper">
+                    <label for="cc-number">Número do cartão</label>
+                    <input required placeholder="0000 0000 0000 0000" type="text" name="cc-number" id="cc-number">
+                    <p class="warning"><img src="./assets/warning.svg" alt="icone de alerta">Insira um número de cartão
+                        válido</p>
+                </div>
+                <div class="input-wrapper">
+                    <label for="cc-name">Nome do titular</label>
+                    <input required placeholder="Nome como está no cartão" type="text" name="cc-name" id="cc-name">
+                    <p class="warning"><img src="./assets/warning.svg" alt="icone de alerta">Insira o nome do titular
+                    </p>
+                </div>
+                <div class="two-inputs-container">
+                    <div class="input-wrapper">
+                        <label for="cc-validity">Validade</label>
+                        <input required placeholder="mm/aa" type="text" name="cc-validity" id="cc-validity">
+                        <p class="warning"><img src="./assets/warning.svg" alt="icone de alerta">Insira uma válidade</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="cc-cvv">CVV <img title="Esse número fica atrás do cartão"
+                                src="./assets/question.svg" alt="icone de questão"></label>
+                        <input required placeholder="***" type="text" name="cc-cvv" id="cc-cvv">
+                        <p class="warning"><img src="./assets/warning.svg" alt="icone de alerta">Insira o CVV</p>
+                    </div>
+                </div>
+            </section>
+            <section id="safe-info">
+                <p><img src="./assets/shield-check.svg" alt="icone de segurança confirmada">Seus dados estão seguros</p>
+            </section>
+        </form>
+        <section id="button">
+            <button disabled type="submit" form="cc-form">Adicionar Cartão</button>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

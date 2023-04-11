@@ -14,5 +14,9 @@ const challenges = [
     {
         name: "KanBan",
         ref: "kanban"
+    },
+    {
+        name: "Formulário de Cartão",
+        ref: "formulario-de-cartao"
     }
 ]
