@@ -18,5 +18,9 @@ const challenges = [
     {
         name: "Formulário de Cartão",
         ref: "formulario-de-cartao"
+    },
+    {
+        name: "Componente de Upload",
+        ref: "componente-de-upload"
     }
 ]

@@ -87,5 +87,12 @@
             <td align="center">✅</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/formulario-de-cartao"><img width="300px" src="./previews/formulario-de-cartao.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/componente-de-upload">Componente de Upload</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/componente-de-upload"><img width="300px" src="./previews/componente-de-upload.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
