@@ -25,5 +25,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Algumas coisas usadas nesse desafio
 
+- [Ion Icons](https://ionic.io/ionicons)
 - responsividade
 - css variables

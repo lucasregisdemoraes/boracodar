@@ -4,9 +4,12 @@
     Projetos #boraCodar da Rocketseat 
     <br>
     <br>
+    <a href="https://lucasregisdemoraes.github.io/boracodar/">Clique aqui para ver a página com todos os desafios concluidos</a>
+    <br>
+    <br>
     Clique no <strong>nome do projeto</strong> para ver o código
     <br>
-    Clique na <strong>imagem do projeto</strong> para ver a página
+    Clique na <strong>imagem do projeto</strong> para ver a página web
     <br>
 <table>
     <thead>
