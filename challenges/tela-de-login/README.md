@@ -20,8 +20,9 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS e JavaScript
-- Figma
+- HTML e CSS
+- JavaScript
+- [Figma](https://figma.com)
 
 ## Algumas coisas usadas nesse desafio
 

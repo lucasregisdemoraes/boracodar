@@ -21,8 +21,9 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
-- Figma
-- ApexCharts.js
+- JavaScript
+- [Figma](https://figma.com)
+- [ApexCharts.js](https://apexcharts.com/)
 
 ## Algumas coisas usadas nesse desafio
 
