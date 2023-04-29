@@ -97,5 +97,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/componente-de-upload"><img width="300px" src="./previews/componente-de-upload.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/pricing-table">Pricing Table</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pricing-table"><img width="300px" src="./previews/pricing-table.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>

@@ -22,5 +22,9 @@ const challenges = [
     {
         name: "Componente de Upload",
         ref: "componente-de-upload"
+    },
+    {
+        name: "Pricing Table",
+        ref: "pricing-table"
     }
 ]

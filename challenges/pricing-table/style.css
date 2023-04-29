@@ -1,0 +1,261 @@
+body,
+main,
+div,
+ul,
+li,
+h2,
+h3,
+p,
+span,
+button {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --color-gray-50: #f8fafc;
+    --color-gray-100: #f1f5f9;
+    --color-gray-200: #e2e8f0;
+    --color-gray-300: #cbd5e1;
+    --color-gray-400: #94a3b8;
+    --color-gray-500: #64748b;
+    --color-gray-600: #475569;
+    --color-gray-700: #334155;
+    --color-gray-800: #1e293b;
+    --color-gray-900: #0f172a;
+    --color-green-100: #04d361;
+    --color-green-200: #1b873f;
+    --color-purple-100: #996dff;
+    --color-purple-200: #7c3aed;
+    --color-white: #ffffff;
+    --color-orange: #fba94c;
+}
+
+body {
+    background-color: var(--color-gray-50);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: min(1300px, 92vw);
+    margin: 0 auto;
+}
+
+main {
+    padding: 80px 0;
+}
+
+main .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 32px;
+}
+
+/* ===== CARD ===== */
+main .cards .card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 10px;
+    width: min(380px, 100%);
+    padding: 24px;
+    transition: border 0.5s;
+}
+
+main .cards .card:hover {
+    border-color: var(--color-purple-100);
+}
+
+main .cards .card h3 {
+    color: var(--color-purple-200);
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+main .cards .card .plan-name-div {
+    color: var(--color-gray-800);
+    display: flex;
+    justify-content: space-between;
+}
+
+main .cards .card .plan-name-div h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main .cards .card .plan-name-div .price-div {
+    font-size: 18px;
+}
+
+main .cards .card .plan-name-div .price-div .price {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main .cards .card .plan-name-div .price-div .per-month {
+    font-weight: 700;
+}
+
+main .cards .card button {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-gray-800);
+    padding: 16px 24px;
+    background-color: transparent;
+    border: 1px solid var(--color-gray-800);
+    border-radius: 4px;
+    width: 100%;
+    margin: 16px 0;
+    cursor: pointer;
+    transition: color 0.5s, background 0.5s;
+}
+
+main .cards .card button:hover {
+    color: var(--color-white);
+    background-color: var(--color-gray-800);
+}
+
+main .cards .card ul {
+    display: grid;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-gray-200);
+}
+
+main .cards .card ul li {
+    display: flex;
+    align-items: center;
+}
+
+main .cards .card ul li i.ph-check {
+    font-size: 20px;
+    color: var(--color-green-200);
+}
+
+main .cards .card ul li span {
+    color: var(--color-gray-600);
+    letter-spacing: 1px;
+    margin-left: 8px;
+    margin-right: auto;
+}
+
+main .cards .card ul li i.ph-info {
+    font-size: 16px;
+    color: var(--color-gray-900);
+}
+
+/* dark card */
+main .cards .card.dark {
+    background-color: var(--color-gray-900);
+    border: none;
+}
+
+main .cards .card.dark h3 {
+    color: var(--color-purple-100);
+}
+
+main .cards .card.dark .plan-name-div {
+    color: var(--color-gray-50);
+}
+
+main .cards .card.dark button {
+    color: var(--color-white);
+    background-color: var(--color-purple-100);
+}
+
+main .cards .card.card.dark button:hover {
+    color: var(--color-white);
+    background-color: var(--color-purple-200);
+}
+
+main .cards .card.dark ul {
+    border-color: var(--color-gray-700);
+}
+
+main .cards .card.dark ul li i.ph-check {
+    color: var(--color-green-100);
+}
+
+main .cards .card.dark ul li span {
+    color: var(--color-gray-300);
+}
+
+main .cards .card ul li i.ph-info {
+    color: var(--color-gray-500);
+}
+
+/* most advantageous card */
+main .cards .card.more-advantageous {
+    padding-top: 40px;
+    position: relative;
+    margin-top: 17px;
+}
+
+main .cards .card.more-advantageous::before {
+    color: var(--color-gray-900);
+    font-size: 12px;
+    font-weight: 700;
+    content: "MAIS VANTAJOSO";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: var(--color-orange);
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+/* enterprise card */
+main .cards .card.enterprise .plan-name-div h2 {
+    font-size: 32px;
+
+}
+
+main .cards .card.enterprise button {
+    margin: 32px 0;
+}
+
+main .cards .card.enterprise ul {
+    padding-top: 32px;
+}
+
+/* appear animation */
+main .cards .card:nth-child(1) {
+    --delay: 0.25s
+}
+
+main .cards .card:nth-child(2) {
+    --delay: 0.5s
+}
+
+main .cards .card:nth-child(3) {
+    --delay: 0.75s
+}
+
+main .cards .card {
+    animation: appear 400ms backwards var(--delay);
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+@media(min-width: 861px) {
+
+    /* most advantageous card */
+    main .cards .card.more-advantageous {
+        margin-top: 0;
+    }
+}
