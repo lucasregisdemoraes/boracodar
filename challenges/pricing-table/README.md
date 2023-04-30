@@ -25,6 +25,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Algumas coisas usadas nesse desafio
 
 - [Phosphor Icons](https://phosphoricons.com/)
-- css variables
+- CSS variables
 - display flex e grid
 - keyframes
