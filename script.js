@@ -9,6 +9,6 @@ challengesList.innerHTML = challenges.map(challenge => `
             <img src="./previews/${challenge.ref}.jpg" alt="imagem do desafio ${challenge.name}" />
         </a>
     </li>
-`)
+`).join("")
 
 challengesNumberSpan.textContent = challenges.length
