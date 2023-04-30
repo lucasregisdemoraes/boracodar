@@ -29,6 +29,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - display grid
 - background-image
 - flex: 1
-- css variables
+- CSS variables
 - cálculo de graus (deg) (transform/rotate/translate)
-- css mask e linear-gradient()
+- CSS mask e linear-gradient()

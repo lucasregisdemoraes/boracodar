@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - responsividade
 - background-image
-- css variables
+- CSS variables
 - position relative e absolute
 - functions
 - addEventListener

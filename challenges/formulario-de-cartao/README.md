@@ -28,6 +28,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Algumas coisas usadas nesse desafio
 
 - responsividade
-- css variables
+- CSS variables
 - display flex e grid
 - button disabled while invalid inputs function

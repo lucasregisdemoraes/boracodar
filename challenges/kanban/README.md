@@ -27,4 +27,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Ion Icons](https://ionic.io/ionicons)
 - responsividade
-- css variables
+- CSS variables

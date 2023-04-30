@@ -1,9 +1,9 @@
-<h1 align="center">Componente de Upload</h1>
+<h1 align="center">Pricing Table</h1>
 
-<p align="center">Desafio 14 #boraCodar da Rocketseat</p>
+<p align="center">Desafio 15 #boraCodar da Rocketseat</p>
 
 <p align="center">
-    <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/componente-de-upload">Acesse a página por aqui</a>
+    <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pricing-table">Acesse a página por aqui</a>
     <br>
     <br>
     <a href="https://lucasregisdemoraes.github.io/boracodar">Acesse todos os desafios #BoraCodar concluidos por mim aqui</a>
@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-    <img src="../../previews/componente-de-upload.jpg">
+    <img src="../../previews/pricing-table.jpg">
 </p>
 
 ## Tecnologias
