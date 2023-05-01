@@ -26,5 +26,9 @@ const challenges = [
     {
         name: "Pricing Table",
         ref: "pricing-table"
+    },
+    {
+        name: "Página de Contatos",
+        ref: "pagina-de-contatos"
     }
 ]

@@ -1,0 +1,205 @@
+body,
+header,
+main,
+section,
+div,
+form,
+ul,
+li,
+h1,
+h3,
+p,
+label,
+input,
+img {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-text-color: #E1E1E6;
+    --secondary-text-color: #8C8CBA;
+    --icon-color: #E1E1E6;
+    --bg-header-color: #16151E;
+    --bg-main-color: #1A1924;
+    --bg-input-color: #24243D;
+}
+
+.purple {
+    background-color: #633BBC;
+}
+
+.green {
+    background-color: #07847E;
+}
+
+.pink {
+    background-color: #9A00B3;
+}
+
+.blue {
+    background-color: #0088B3;
+}
+
+ul {
+    list-style: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 40px 0;
+    background-color: var(--bg-header-color);
+}
+
+header .container .title-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+header .container .title-div h1 {
+    color: var(--main-text-color);
+    font-size: 20px;
+}
+
+header .container .title-div .action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header .container .title-div .action-buttons ion-icon {
+    font-size: 24px;
+    color: var(--icon-color);
+    cursor: pointer;
+}
+
+header .container .title-div .action-buttons ion-icon:hover {
+    opacity: 0.7;
+}
+
+header .container form {
+    background-color: var(--bg-input-color);
+    padding: 16px 24px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .container form:focus-within {
+    outline: 2px solid var(--main-text-color);
+    outline-offset: 2px;
+}
+
+header .container form ion-icon {
+    font-size: 16px;
+    color: var(--icon-color);
+}
+
+header .container form input {
+    font-size: 12px;
+    color: var(--main-text-color);
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+header .container form input::placeholder {
+    opacity: 1;
+}
+
+/* ===== MAIN ===== */
+main {
+    background-color: var(--bg-main-color);
+    padding: 48px 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    width: 8px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #282843;
+    border-radius: 999px;
+}
+
+main .container {
+    display: grid;
+    gap: 56px;
+}
+
+main .container section {
+    display: flex;
+    gap: 52px;
+}
+
+main .container section .letter {
+    font-size: 16px;
+    color: var(--main-text-color);
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+}
+
+main .container section ul {
+    display: grid;
+    gap: 32px;
+}
+
+main .container section ul .person {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+main .container section ul .person img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+main .container section ul .person .info .name {
+    color: var(--main-text-color);
+    font-size: 16px;
+}
+
+main .container section ul .person .info .number {
+    color: var(--secondary-text-color);
+    font-size: 12px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contatos</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="title-div">
+                <h1>Meus contatos</h1>
+                <div class="action-buttons">
+                    <ion-icon name="add"></ion-icon>
+                    <ion-icon name="pencil"></ion-icon>
+                    <ion-icon name="trash"></ion-icon>
+                </div>
+            </div>
+            <form class="input-wrapper">
+                <label class="sr-only" for="filter-input">Busque por nome ou dados de contato</label>
+                <ion-icon name="search"></ion-icon>
+                <input id="filter-input" type="text" placeholder="Busque por nome ou por dados de contato...">
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="list-wrapper">
+                <div class="letter purple">A</div>
+                <ul>
+                    <li class="person">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="foto de Abraão Sena">
+                        <div class="info">
+                            <h3 class="name">Abraão Sena</h3>
+                            <p class="number">(11) 90876-1234</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="list-wrapper">
+                <div class="letter green">B</div>
+                <ul>
+                    <li class="person">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="foto de Beatriz Clasen">
+                        <div class="info">
+                            <h3 class="name">Beatriz Clasen</h3>
+                            <p class="number">(48) 90876-1123</p>
+                        </div>
+                    </li>
+                    <li class="person">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="foto de Brenda Mendes">
+                        <div class="info">
+                            <h3 class="name">Brenda Mendes</h3>
+                            <p class="number">(21) 90876-8765</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="list-wrapper">
+                <div class="letter pink">C</div>
+                <ul>
+                    <li class="person">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="foto de Caio Vinícius">
+                        <div class="info">
+                            <h3 class="name">Caio Vinícius</h3>
+                            <p class="number">(71) 90876-2435</p>
+                        </div>
+                    </li>
+                    <li class="person">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="foto de Cleiton Souza">
+                        <div class="info">
+                            <h3 class="name">Cleiton Souza</h3>
+                            <p class="number">(11) 90876-1209</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="list-wrapper">
+                <div class="letter blue">D</div>
+                <ul>
+                    <li class="person">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="foto de Daniel Duarte">
+                        <div class="info">
+                            <h3 class="name">Daniel Duarte</h3>
+                            <p class="number">(82) 90876-6534</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

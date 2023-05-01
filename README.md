@@ -104,5 +104,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pricing-table"><img width="300px" src="./previews/pricing-table.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>16</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/pagina-de-contatos">Página de Contatos</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pagina-de-contatos"><img width="300px" src="./previews/pagina-de-contatos.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
