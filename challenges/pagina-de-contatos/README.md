@@ -1,6 +1,6 @@
 <h1 align="center">Página de Contatos</h1>
 
-<p align="center">Desafio 16 #boraCodar da Rocketseat</p>
+<p align="center">Desafio #boraCodar 16 da Rocketseat</p>
 
 <p align="center">
     <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pagina-de-contatos">Acesse a página por aqui</a>

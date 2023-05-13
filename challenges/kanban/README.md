@@ -1,6 +1,6 @@
 <h1 align="center">KanBan</h1>
 
-<p align="center">Desafio 12 #boraCodar da Rocketseat</p>
+<p align="center">Desafio #boraCodar 12 da Rocketseat</p>
 
 <p align="center">
     <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/kanban">Acesse a página por aqui</a>

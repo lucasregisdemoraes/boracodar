@@ -1,6 +1,6 @@
 <h1 align="center">Tela de Login</h1>
 
-<p align="center">Desafio 11 #boraCodar da Rocketseat</p>
+<p align="center">Desafio #boraCodar 11 da Rocketseat</p>
 
 <p align="center">
     <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/tela-de-login">Acesse a página por aqui</a>

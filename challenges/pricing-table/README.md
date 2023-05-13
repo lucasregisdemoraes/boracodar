@@ -1,6 +1,6 @@
 <h1 align="center">Pricing Table</h1>
 
-<p align="center">Desafio 15 #boraCodar da Rocketseat</p>
+<p align="center">Desafio #boraCodar 15 da Rocketseat</p>
 
 <p align="center">
     <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pricing-table">Acesse a página por aqui</a>

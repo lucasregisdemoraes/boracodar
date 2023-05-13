@@ -1,6 +1,6 @@
 <h1 align="center">Formulário de Cartão</h1>
 
-<p align="center">Desafio 13 #boraCodar da Rocketseat</p>
+<p align="center">Desafio #boraCodar 13 da Rocketseat</p>
 
 <p align="center">
     <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/formulario-de-cartao">Acesse a página por aqui</a>

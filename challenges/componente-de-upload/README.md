@@ -1,6 +1,6 @@
 <h1 align="center">Componente de Upload</h1>
 
-<p align="center">Desafio 14 #boraCodar da Rocketseat</p>
+<p align="center">Desafio #boraCodar 14 da Rocketseat</p>
 
 <p align="center">
     <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/componente-de-upload">Acesse a página por aqui</a>

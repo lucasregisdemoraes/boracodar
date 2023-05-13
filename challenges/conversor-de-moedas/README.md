@@ -1,6 +1,6 @@
 <h1 align="center">Conversor de Moedas</h1>
 
-<p align="center">Desafio 10 #boraCodar da Rocketseat</p>
+<p align="center">Desafio #boraCodar 10 da Rocketseat</p>
 
 <p align="center">
     <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/conversor-de-moedas">Acesse a página por aqui</a>

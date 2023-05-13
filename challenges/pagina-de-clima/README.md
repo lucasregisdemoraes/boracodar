@@ -1,6 +1,6 @@
 <h1 align="center">Página de Clima</h1>
 
-<p align="center">Desafio 10 #boraCodar da Rocketseat</p>
+<p align="center">Desafio #boraCodar 10 da Rocketseat</p>
 
 <p align="center">
     <a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pagina-de-clima">Acesse a página por aqui</a>
