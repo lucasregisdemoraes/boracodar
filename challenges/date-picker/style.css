@@ -1,0 +1,234 @@
+:root {
+    --item-highlight-color: #6200ee;
+    --item-on-hover-color: #ece0fd;
+    --card-primary-color: #ffffff;
+    --background-color: #f5f5f5;
+    --font-heading-color: #333333;
+    --font-text-color: #666666;
+    --font-on-highlight-color: #ffffff;
+}
+
+body,
+div,
+header,
+main,
+label,
+input {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== PICKER SWITCH ===== */
+#picker-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 17px;
+}
+
+#picker-switch label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-text-color);
+    height: 40px;
+    width: 82px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    transition: all 300ms;
+}
+
+#picker-switch label:hover {
+    background-color: var(--item-on-hover-color);
+}
+
+#picker-switch label.active {
+    background-color: var(--item-highlight-color);
+    color: var(--font-on-highlight-color);
+    font-weight: 700;
+}
+
+#picker-switch label.active::after {
+    content: "";
+    background-color: var(--font-on-highlight-color);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 6px;
+}
+
+#picker-switch input {
+    display: none;
+}
+
+/* ===== APP ===== */
+#app {
+    background-color: var(--card-primary-color);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+#app .picker {
+    display: none;
+    gap: 24px;
+    width: min-content;
+}
+
+#app .picker.active {
+    display: grid;
+}
+
+#app .picker header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#app .picker header i {
+    font-size: 16px;
+    color: var(--font-text-color);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#app .picker header i:hover {
+    background-color: var(--item-on-hover-color);
+}
+
+#app .picker header>div {
+    color: var(--font-heading-color);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#app .picker header>div img {
+    cursor: pointer;
+}
+
+/* Months Picker */
+#app #months-picker main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 17px;
+}
+
+#app #months-picker main>div {
+    color: var(--font-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 82px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 300ms;
+    position: relative;
+}
+
+#app #months-picker main>div:hover {
+    background-color: var(--item-on-hover-color);
+}
+
+#app #months-picker main>div.active {
+    font-weight: 700;
+    background-color: var(--item-highlight-color);
+    color: var(--font-on-highlight-color);
+}
+
+#app #months-picker main>div.active::after {
+    content: "";
+    background-color: var(--font-on-highlight-color);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 6px;
+}
+
+/* Days Picker */
+#app #days-picker main .week-days,
+#app #days-picker main #calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#app #days-picker main .week-days span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--font-text-color);
+    height: 32px;
+    width: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#app #days-picker main #calendar-days div {
+    color: var(--font-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#app #days-picker main #calendar-days div:hover {
+    background-color: var(--item-on-hover-color);
+}
+
+#app #days-picker main #calendar-days div.active {
+    font-weight: 700;
+    background-color: var(--item-highlight-color);
+    color: var(--font-on-highlight-color);
+}
+
+#app #days-picker main #calendar-days div.active::after {
+    content: "";
+    background-color: var(--font-on-highlight-color);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 6px;
+}
+
+#app #days-picker main #calendar-days .another-month {
+    opacity: 0.6;
+}
+
+/* Essa parte não esta funcionando */
+
+/* #app #days-picker main #calendar-days :first-of-type {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#app #days-picker main #calendar-days :last-of-type {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+} */

@@ -30,5 +30,9 @@ const challenges = [
     {
         name: "Página de Contatos",
         ref: "pagina-de-contatos"
+    },
+    {
+        name: "Date Picker",
+        ref: "date-picker"
     }
 ]

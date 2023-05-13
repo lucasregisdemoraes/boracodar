@@ -111,5 +111,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pagina-de-contatos"><img width="300px" src="./previews/pagina-de-contatos.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>17</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/date-picker">Date Picker</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/date-picker"><img width="300px" src="./previews/date-picker.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
