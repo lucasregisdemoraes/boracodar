@@ -45,7 +45,7 @@ monthsPickerYear.textContent = new Date().getFullYear()
 function renderDays() {
     let dayElements = ""
 
-    let data_inicio = new Date("4 13 2023");
+    let data_inicio = new Date();
 
     let ultimoDiaDoMes = new Date(data_inicio.getFullYear(), data_inicio.getMonth() + 1, 0);
 
