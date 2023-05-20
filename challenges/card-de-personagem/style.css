@@ -1,0 +1,112 @@
+body,
+div,
+header,
+main,
+h2,
+h3,
+p,
+img {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --character-name: #ECE4EF;
+  --caracter-description: #D8CEDE;
+  --info-title: #9C83A7;
+  --info-description: #D8CEDE;
+}
+
+body {
+    background: linear-gradient(102.32deg, #030422 -2.74%, #090114 101.6%);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body .container {
+    display: flex;
+    align-items: center;
+}
+
+.card-back {
+    width: 350px;
+    height: 490px;
+    border-radius: 16px;
+    display: grid;
+    place-content: center;
+}
+
+.card-back h2 {
+    font-size: 32px;
+    -webkit-text-stroke: 1px #312D74;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-back.left {
+    background-image: url("./assets/bg-card-left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-back.right {
+    background-image: url("./assets/bg-card-right.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-front {
+    background-image: url("./assets/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 440px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-front header {
+  max-width: 270px;
+  margin: 48px 40px 60px;
+}
+
+.card-front header h2 {
+  font-size: 32px;
+  color: var(--character-name);
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+  margin-bottom: 16px;
+}
+
+.card-front header p {
+  color: var(--caracter-description);
+  font-size: 14px;
+}
+
+.card-front .character {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card-front main {
+  max-width: 200px;
+  display: grid;
+  gap: 16px;
+  margin: 0px 40px 48px;
+}
+
+.card-front main h3 {
+  color: var(--info-title);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-front main p {
+  color: var(--info-description);
+  font-size: 14px;
+  font-weight: 700;
+}

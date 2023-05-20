@@ -34,5 +34,9 @@ const challenges = [
     {
         name: "Date Picker",
         ref: "date-picker"
+    },
+    {
+        name: "Card de Personagem",
+        ref: "card-de-personagem"
     }
 ]
