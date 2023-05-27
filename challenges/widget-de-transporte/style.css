@@ -1,0 +1,217 @@
+body,
+main,
+div,
+section,
+h2,
+h3,
+p,
+span,
+img,
+input {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-body: #e0e0e0;
+  --drag-pill: #E5D8EA;
+  --font-color: #372D3B;
+  --font-stront-color: #864293;
+  --icon-color: #372D3B;
+  --bg-stars: #372D3B;
+  --color-stars: #FBF8FC;
+  --bg-input: #F5EDF7;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background-color: var(--bg-body);
+  padding: 50px 20px;
+}
+
+main {
+  width: 800px;
+  border-radius: 40px;
+  background-color: #fff;
+  padding: 24px 56px;
+  display: grid;
+  gap: 100px;
+}
+
+/* ===== DRAG PILL SECTION ===== */
+main section.drag-pill {
+  background-color: var(--drag-pill);
+  height: 17px;
+  width: 168px;
+  border-radius: 999px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER SECTION ===== */
+main .header {
+  color: var(--font-color);
+}
+
+main .header h2 {
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+
+main .header h2 strong {
+  color: var(--font-stront-color);
+}
+
+main .header p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* ===== DRIVER INFO SECTION ===== */
+main .driver-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .driver-info .driver-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+main .driver-info .driver-wrapper .driver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+main .driver-info .driver-wrapper .driver img {
+  width: 137px;
+  border-radius: 50%;
+}
+
+main .driver-info .driver-wrapper .driver .stars-wrapper {
+  background-color: var(--bg-stars);
+  border-radius: 999px;
+  padding: 8px 22px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: -35px;
+}
+
+main .driver-info .driver-wrapper .driver .stars-wrapper i,
+main .driver-info .driver-wrapper .driver .stars-wrapper span {
+  color: var(--color-stars);
+  font-size: 20px;
+}
+
+main .driver-info .driver-wrapper .driver .stars-wrapper span {
+  font-weight: 600;
+}
+
+main .driver-info .driver-wrapper .driver h3 {
+  font-size: 18px;
+  color: var(--font-color);
+  margin-top: 7px;
+}
+
+main .driver-info .car-img {
+  margin-left: -45px;
+  z-index: 1;
+}
+
+main .driver-info .car-identification {
+  color: var(--font-color);
+  display: grid;
+  gap: 12px;
+}
+
+main .driver-info .car-identification .plate {
+  font-size: 41px;
+  font-weight: 700
+}
+
+main .driver-info .car-identification .car-name {
+  font-size: 24px;
+}
+
+/* ===== MESSAGE SECTION ===== */
+main .message {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+main .message input {
+  font-size: 24px;
+  color: var(--font-color);
+  font-weight: 600;
+  background-color: var(--bg-input);
+  border-radius: 24px;
+  border: none;
+  height: 64px;
+  padding: 0 30px;
+  outline: none;
+  flex: 1;
+  width: 100%;
+}
+
+main .message input:focus {
+  outline: 2px solid var(--font-stront-color);
+}
+
+main .message .buttons {
+  display: flex;
+  gap: 40px;
+}
+
+main .message .buttons i {
+  font-size: 48px;
+  color: var(--icon-color);
+  cursor: pointer;
+  transition: .3s;
+}
+
+main .message .buttons i:hover {
+  opacity: 0.7;
+}
+
+@media(max-width: 840px) {
+  main {
+    width: 90vw;
+    padding: 30px;
+    text-align: center;
+    gap: 50px;
+  }
+
+  main .driver-info {
+    justify-content: space-evenly;
+    gap: 40px 120px;
+    flex-wrap: wrap;
+  }
+
+  main .driver-info .driver-wrapper {
+    position: relative;
+  }
+
+  main .driver-info .car-img {
+    margin-left: 0px;
+    left: 50px;
+    position: absolute;
+    width: 200px;
+  }
+
+  main .message {
+    gap: 15px;
+  }
+
+  main .message .buttons {
+    gap: 15px;
+  }
+}

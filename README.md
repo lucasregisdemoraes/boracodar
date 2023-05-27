@@ -125,5 +125,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/card-de-personagem"><img width="300px" src="./previews/card-de-personagem.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>19</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/widget-de-transporte">Widget de Transporte</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/widget-de-transporte"><img width="300px" src="./previews/widget-de-transporte.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
