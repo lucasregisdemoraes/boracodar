@@ -1,1 +1,1 @@
-const challenges = ["Conversor de Moedas", "Página de Clima", "Tela de Login", "KanBan", "Formulário de Cartão", "Componente de Upload", "Pricing Table", "Página de Contatos", "Date Picker", "Card de Personagem", "Widget de Transporte"]
+const challenges = ["Conversor de Moedas", "Página de Clima", "Tela de Login", "KanBan", "Formulário de Cartão", "Componente de Upload", "Pricing Table", "Página de Contatos", "Date Picker", "Card de Personagem", "Widget de Transporte", "Galeria com Hover"]
