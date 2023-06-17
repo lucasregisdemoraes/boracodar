@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="header">
+            <p>Seu carrinho tem <span>5 itens</span></p>
+            <i class="ph-bold ph-x"></i>
+        </div>
+        <div class="main">
+            <ul>
+                <li>
+                    <div class="left">
+                        <img src="./assets/product-monitor-gamer.jpg" alt="Monitor Gamer Curvo">
+                    </div>
+                    <div class="right">
+                        <p>Monitor Gamer Curvo 49 DQHD, 240Hz, 1ms, HDMI e DisplayPort, HDR 1000, FreeSync Premium,
+                            Ajuste de Altura - LC49G95TSSLXZD</p>
+                        <div class="bottom">
+                            <strong>R$ 8.599,90</strong>
+                            <div class="quantity">
+                                <button class="substract">
+                                    <i class="ph-bold ph-minus"></i>
+                                </button>
+                                <span>1</span>
+                                <button class="add">
+                                    <i class="ph-bold ph-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <img src="./assets/product-cadeira-gamer.jpg" alt="Cadeira Gamer">
+                    </div>
+                    <div class="right">
+                        <p>Cadeira Gamer RGB - Preta com Iluminação (Led)</p>
+                        <div class="bottom">
+                            <strong>R$ 959,90</strong>
+                            <div class="quantity">
+                                <button class="substract">
+                                    <i class="ph-bold ph-minus"></i>
+                                </button>
+                                <span>1</span>
+                                <button class="add">
+                                    <i class="ph-bold ph-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <img src="./assets/product-teclado-gamer.jpg" alt="Teclado Gamer">
+                    </div>
+                    <div class="right">
+                        <p>Teclado Gamer Mecânico Low Profile RGB AW510K 580</p>
+                        <div class="bottom">
+                            <strong>R$ 1.002,20</strong>
+                            <div class="quantity">
+                                <button class="substract">
+                                    <i class="ph-bold ph-minus"></i>
+                                </button>
+                                <span>1</span>
+                                <button class="add">
+                                    <i class="ph-bold ph-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left">
+                        <img src="./assets/product-headset-gamer.jpg" alt="Headset Gamer">
+                    </div>
+                    <div class="right">
+                        <p>Headset Gamer RGB Preto</p>
+                        <div class="bottom">
+                            <strong>R$ 99,90</strong>
+                            <div class="quantity">
+                                <button class="substract">
+                                    <i class="ph-bold ph-minus"></i>
+                                </button>
+                                <span>1</span>
+                                <button class="add">
+                                    <i class="ph-bold ph-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="total">
+                <p>Total:</p>
+                <strong>R$ 10.681,60</strong>
+            </div>
+            <div class="add-coupon">
+                <i class="ph ph-tag"></i>
+                <span>Adicionar cupom</span>
+            </div>
+            <button>Finalizar compra</button>
+        </div>
+    </div>
+</body>
+
+</html>

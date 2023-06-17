@@ -1,0 +1,279 @@
+$brand-color: #9333ea;
+$brand-color-light: #a855f7;
+$brand-color-lighter: #c084fc;
+$text-color-primary: #f9fafb;
+$text-color-secondary: #e4e4e7;
+$close-button-color: #a1a1aa;
+$stroke-color: #3f3f46;
+$surface-color: #18181b;
+$background-color: #09090b;
+
+body,
+div,
+ul,
+li,
+p,
+span,
+strong,
+i,
+img,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: $background-color;
+    height: 100vh;
+
+    #app {
+        background-color: $surface-color;
+        display: grid;
+        grid-template-rows: max-content 1fr max-content;
+        height: 100%;
+        max-width: 428px;
+        margin-left: auto;
+
+        .header {
+            padding: 24px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $stroke-color;
+
+            p {
+                font-size: 20px;
+                color: $text-color-secondary;
+
+                span {
+                    color: $text-color-primary;
+                    font-weight: bold;
+                }
+            }
+
+            i {
+                color: $close-button-color;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            i:hover {
+                filter: brightness(2);
+            }
+        }
+
+        .main {
+            padding: 32px;
+            overflow: scroll;
+
+            ul {
+                list-style: none;
+                display: grid;
+                gap: 48px;
+
+                li {
+                    display: flex;
+                    gap: 24px;
+                    align-items: center;
+
+                    .left {
+                        height: 104px;
+
+                        img {
+                            width: 104px;
+                            border-radius: 8px;
+                        }
+                    }
+
+                    .right {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%;
+                        flex: 1;
+
+                        p {
+                            color: $text-color-secondary;
+                            font-size: 16px;
+                            line-height: 24px;
+                            height: 48px;
+
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -moz-box;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                        }
+
+                        .bottom {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            strong {
+                                font-size: 16px;
+                                color: $text-color-secondary;
+                            }
+
+                            .quantity {
+                                button {
+                                    height: 40px;
+                                    width: 40px;
+                                    background-color: transparent;
+                                    border-radius: 8px;
+                                    border-width: 1.5px;
+                                    border-style: solid;
+                                    cursor: pointer;
+                                    transition: border 200ms, background 200ms;
+
+                                    i {
+                                        font-size: 16px;
+                                        color: $brand-color-light;
+                                        transition: color 200ms;
+                                    }
+
+                                }
+
+                                button.substract {
+                                    border-color: $stroke-color;
+                                }
+
+                                button.substract:hover,
+                                button.substract:focus {
+                                    border-color: $brand-color-light;
+                                    outline: none;
+
+                                    i {
+                                        color: $text-color-primary;
+                                    }
+                                }
+
+                                button.add {
+                                    border-color: $brand-color-light;
+                                }
+
+                                button.add:hover,
+                                button.add:focus {
+                                    background-color: $brand-color;
+                                    border: none;
+                                    outline: none;
+
+                                    i {
+                                        color: $text-color-primary;
+                                    }
+                                }
+
+                                span {
+                                    color: $text-color-primary;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    display: inline-block;
+                                    text-align: center;
+                                    width: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            border-top: 1px solid $stroke-color;
+            padding: 32px;
+
+            .total {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 20px;
+
+                p {
+                    color: $text-color-secondary;
+                    font-weight: 500;
+                }
+
+                strong {
+                    color: $text-color-primary;
+                    font-weight: 700;
+                }
+            }
+
+            .add-coupon {
+                color: $brand-color-light;
+                width: fit-content;
+                margin: 16px 0 32px auto;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                gap: 8px;
+                cursor: pointer;
+                transition: color 200ms;
+
+                i {
+                    font-size: 24px;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            .add-coupon:hover {
+                color: $brand-color-lighter;
+            }
+
+            button {
+                display: block;
+                font-size: 18px;
+                font-weight: 500;
+                color: $text-color-primary;
+                width: 100%;
+                height: 64px;
+                background-color: $brand-color;
+                border: none;
+                border-radius: 8px;
+                box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                transition: background 200ms, outline 200ms;
+            }
+
+            button:hover {
+                background-color: $brand-color-light;
+            }
+
+            button:focus {
+                outline: 2px solid $text-color-primary;
+                outline-offset: 2px;
+            }
+        }
+    }
+
+    @media (max-width: 426px) {
+        #app {
+            .main {
+                ul {
+                    li {
+                        .right {
+                            p {
+                                -webkit-line-clamp: 1;
+                                height: 24px;
+                            }
+
+                            .bottom {
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                gap: 10px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

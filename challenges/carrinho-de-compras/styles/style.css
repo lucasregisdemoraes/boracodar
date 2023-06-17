@@ -1,0 +1,221 @@
+body,
+div,
+ul,
+li,
+p,
+span,
+strong,
+i,
+img,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #09090b;
+  height: 100vh;
+}
+body #app {
+  background-color: #18181b;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100%;
+  max-width: 428px;
+  margin-left: auto;
+}
+body #app .header {
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3f3f46;
+}
+body #app .header p {
+  font-size: 20px;
+  color: #e4e4e7;
+}
+body #app .header p span {
+  color: #f9fafb;
+  font-weight: bold;
+}
+body #app .header i {
+  color: #a1a1aa;
+  font-size: 24px;
+  cursor: pointer;
+}
+body #app .header i:hover {
+  filter: brightness(2);
+}
+body #app .main {
+  padding: 32px;
+  overflow: scroll;
+}
+body #app .main ul {
+  list-style: none;
+  display: grid;
+  gap: 48px;
+}
+body #app .main ul li {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+body #app .main ul li .left {
+  height: 104px;
+}
+body #app .main ul li .left img {
+  width: 104px;
+  border-radius: 8px;
+}
+body #app .main ul li .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1;
+}
+body #app .main ul li .right p {
+  color: #e4e4e7;
+  font-size: 16px;
+  line-height: 24px;
+  height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+body #app .main ul li .right .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #app .main ul li .right .bottom strong {
+  font-size: 16px;
+  color: #e4e4e7;
+}
+body #app .main ul li .right .bottom .quantity button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border-radius: 8px;
+  border-width: 1.5px;
+  border-style: solid;
+  cursor: pointer;
+  transition: border 200ms, background 200ms;
+}
+body #app .main ul li .right .bottom .quantity button i {
+  font-size: 16px;
+  color: #a855f7;
+  transition: color 200ms;
+}
+body #app .main ul li .right .bottom .quantity button.substract {
+  border-color: #3f3f46;
+}
+body #app .main ul li .right .bottom .quantity button.substract:hover,
+body #app .main ul li .right .bottom .quantity button.substract:focus {
+  border-color: #a855f7;
+  outline: none;
+}
+body #app .main ul li .right .bottom .quantity button.substract:hover i,
+body #app .main ul li .right .bottom .quantity button.substract:focus i {
+  color: #f9fafb;
+}
+body #app .main ul li .right .bottom .quantity button.add {
+  border-color: #a855f7;
+}
+body #app .main ul li .right .bottom .quantity button.add:hover,
+body #app .main ul li .right .bottom .quantity button.add:focus {
+  background-color: #9333ea;
+  border: none;
+  outline: none;
+}
+body #app .main ul li .right .bottom .quantity button.add:hover i,
+body #app .main ul li .right .bottom .quantity button.add:focus i {
+  color: #f9fafb;
+}
+body #app .main ul li .right .bottom .quantity span {
+  color: #f9fafb;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+}
+body #app .footer {
+  border-top: 1px solid #3f3f46;
+  padding: 32px;
+}
+body #app .footer .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+body #app .footer .total p {
+  color: #e4e4e7;
+  font-weight: 500;
+}
+body #app .footer .total strong {
+  color: #f9fafb;
+  font-weight: 700;
+}
+body #app .footer .add-coupon {
+  color: #a855f7;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 16px 0 32px auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 200ms;
+}
+body #app .footer .add-coupon i {
+  font-size: 24px;
+}
+body #app .footer .add-coupon span {
+  font-size: 16px;
+  font-weight: 500;
+}
+body #app .footer .add-coupon:hover {
+  color: #c084fc;
+}
+body #app .footer button {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f9fafb;
+  width: 100%;
+  height: 64px;
+  background-color: #9333ea;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 200ms, outline 200ms;
+}
+body #app .footer button:hover {
+  background-color: #a855f7;
+}
+body #app .footer button:focus {
+  outline: 2px solid #f9fafb;
+  outline-offset: 2px;
+}
+@media (max-width: 426px) {
+  body #app .main ul li .right p {
+    -webkit-line-clamp: 1;
+    height: 24px;
+  }
+  body #app .main ul li .right .bottom {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
