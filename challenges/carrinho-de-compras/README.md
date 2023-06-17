@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-    <img src="../../previews/componente-de-upload.jpg">
+    <img src="../../previews/carrinho-de-compras.jpg">
 </p>
 
 ## Tecnologias
