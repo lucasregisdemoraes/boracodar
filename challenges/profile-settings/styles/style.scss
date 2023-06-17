@@ -1,0 +1,147 @@
+$color-gray-100: #38343D;
+$color-gray-200: #686071;
+$color-gray-300: #797085;
+$color-gray-400: #F4EFFA;
+$color-gray-500: #FDFCFE;
+$color-red: #AA2222;
+$bg-gradient: linear-gradient(107.54deg, #935FD3 0%, #9245F1 100%);
+
+@mixin title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+@mixin text-md {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+@mixin text-sm {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+@mixin text-xs {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    letter-spacing: 4%;
+}
+
+body,
+div,
+img,
+h1,
+h2,
+section,
+ul,
+li,
+i,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    background: $bg-gradient;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+#app {
+    padding: 24px;
+    background-color: $color-gray-500;
+    border-radius: 12px;
+    box-shadow: 0px 52px 21px rgba(30, 30, 30, 0.01), 0px 29px 18px rgba(30, 30, 30, 0.05), 0px 13px 13px rgba(30, 30, 30, 0.09), 0px 3px 7px rgba(30, 30, 30, 0.1), 0px 0px 0px rgba(30, 30, 30, 0.1);
+    max-width: 375px;
+
+    .user {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 24px;
+
+        img {
+            width: 48px;
+            border-radius: 8px;
+        }
+
+        .info {
+            // flex: 1;
+            width: 100%;
+
+            h1 {
+                @include title();
+                color: $color-gray-100;
+                margin-bottom: 4px;
+            }
+
+            p {
+                @include text-sm();
+                color: $color-gray-200;
+                word-break: break-all;
+            }
+        }
+    }
+
+    .options {
+        display: grid;
+        gap: 16px;
+
+        .divider {
+            background-color: $color-gray-400;
+            height: 1px;
+            width: 100%;
+        }
+
+        section {
+            h2 {
+                @include text-xs();
+                color: $color-gray-300;
+                margin-bottom: 12px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 8px 0;
+
+                    div {
+                        color: $color-gray-100;
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+
+                        i {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            @include text-md()
+                        }
+                    }
+
+                    i {
+                        font-size: 16px;
+                    }
+                }
+
+                li.log-out {
+                    div {
+                        color: $color-red;
+                    }
+                }
+            }
+        }
+    }
+}

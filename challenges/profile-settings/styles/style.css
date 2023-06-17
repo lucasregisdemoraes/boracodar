@@ -1,0 +1,103 @@
+body,
+div,
+img,
+h1,
+h2,
+section,
+ul,
+li,
+i,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background: linear-gradient(107.54deg, #935FD3 0%, #9245F1 100%);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#app {
+  padding: 24px;
+  background-color: #FDFCFE;
+  border-radius: 12px;
+  box-shadow: 0px 52px 21px rgba(30, 30, 30, 0.01), 0px 29px 18px rgba(30, 30, 30, 0.05), 0px 13px 13px rgba(30, 30, 30, 0.09), 0px 3px 7px rgba(30, 30, 30, 0.1), 0px 0px 0px rgba(30, 30, 30, 0.1);
+  max-width: 375px;
+}
+#app .user {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+#app .user img {
+  width: 48px;
+  border-radius: 8px;
+}
+#app .user .info {
+  width: 100%;
+}
+#app .user .info h1 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #38343D;
+  margin-bottom: 4px;
+}
+#app .user .info p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #686071;
+  word-break: break-all;
+}
+#app .options {
+  display: grid;
+  gap: 16px;
+}
+#app .options .divider {
+  background-color: #F4EFFA;
+  height: 1px;
+  width: 100%;
+}
+#app .options section h2 {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  letter-spacing: 4%;
+  color: #797085;
+  margin-bottom: 12px;
+}
+#app .options section ul {
+  list-style: none;
+}
+#app .options section ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+#app .options section ul li div {
+  color: #38343D;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+#app .options section ul li div i {
+  font-size: 20px;
+}
+#app .options section ul li div p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+#app .options section ul li i {
+  font-size: 16px;
+}
+#app .options section ul li.log-out div {
+  color: #AA2222;
+}/*# sourceMappingURL=style.css.map */

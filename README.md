@@ -146,5 +146,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/carrinho-de-compras"><img width="300px" src="./previews/carrinho-de-compras.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>22</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/profile-settings">Profile Settings</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/profile-settings"><img width="300px" src="./previews/profile-settings.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
