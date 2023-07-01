@@ -11,5 +11,6 @@ const challenges = ["Conversor de Moedas",
     "Widget de Transporte",
     "Galeria com Hover",
     "Carrinho de Compras",
-    "Profile Settings"
+    "Profile Settings",
+    "Formulário Multi Step"
 ]
