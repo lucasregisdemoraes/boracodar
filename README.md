@@ -153,5 +153,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/profile-settings"><img width="300px" src="./previews/profile-settings.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>23</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/formulario-multi-step">Formulário Multi Step</a></td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/formulario-multi-step"><img width="300px" src="./previews/formulario-multi-step.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>

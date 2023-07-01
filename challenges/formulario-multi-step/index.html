@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Multi Step</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- <i class="ph-bold ph-check"></i> -->
+    <main>
+        <div id="steps-progress">
+            <span class="step">Contato</span>
+            <i class="ph-bold ph-caret-right"></i>
+            <span class="step">Empresa</span>
+            <i class="ph-bold ph-caret-right"></i>
+            <span class="step">Projeto</span>
+        </div>
+
+        <hr class="divider">
+
+        <form id="multi-step-form">
+            <div class="form-step" id="step-1">
+                <div class="input-wrapper">
+                    <label for="name">Nome</label>
+                    <input required type="text" placeholder="Como prefere ser chamado" name="name" id="name">
+                </div>
+                <div class="input-wrapper">
+                    <label for="phone">Telefone</label>
+                    <input required type="text" placeholder="Digite seu número de WhatsApp" name="phone" id="phone">
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">Email</label>
+                    <input required type="email" placeholder="Digite seu e-mail" name="email" id="email">
+                </div>
+                <div class="buttons one-button">
+                    <button type="button" data-action="next">CONTINUAR</button>
+                </div>
+            </div>
+            <div class="form-step" id="step-2">
+                <div class="input-wrapper">
+                    <label for="enterprise-name">Nome da empresa</label>
+                    <input required type="text" placeholder="Qual o nome da empresa" name="enterprise-name"
+                        id="enterprise-name">
+                </div>
+                <div class="input-wrapper">
+                    <label for="employees-number">Número de funcionários</label>
+                    <input required type="text" placeholder="Digite o número de colaboradores" name="employees-number"
+                        id="employees-number">
+                </div>
+                <div class="input-wrapper">
+                    <label for="about-business">Sobre seu negócio</label>
+                    <textarea required placeholder="Fale um pouco sobre seus produtos ou serviços" name="about-business"
+                        id="about-business" rows="4"></textarea>
+                </div>
+                <div class="buttons">
+                    <button type="button" data-action="prev" class="ghost">VOLTAR</button>
+                    <button type="button" data-action="next">CONTINUAR</button>
+                </div>
+            </div>
+            <div class="form-step" id="step-3">
+                <div class="input-wrapper">
+                    <label for="project-goal">Objetivos do projeto</label>
+                    <textarea required placeholder="Fale um pouco sobre seus produtos ou serviços" name="project-goal"
+                        id="project-goal" rows="4"></textarea>
+                </div>
+                <div class="buttons">
+                    <button type="button" data-action="prev" class="ghost">VOLTAR</button>
+                    <button type="submit">ENVIAR RESPOSTA</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
