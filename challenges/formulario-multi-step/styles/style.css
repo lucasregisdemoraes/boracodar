@@ -108,7 +108,6 @@ main form .form-step {
   gap: 16px;
   position: absolute;
   top: 0;
-  display: none;
 }
 main form .form-step.hide {
   display: none;
