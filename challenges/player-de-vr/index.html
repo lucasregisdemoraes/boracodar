@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de VR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="actions">
+                <i class="ai-panel-right icon-button"></i>
+                <ion-icon class="icon-button" name="chevron-back-outline"></ion-icon>
+                <ion-icon class="icon-button" name="chevron-forward-outline"></ion-icon>
+            </div>
+            <div class="address-bar">
+                <ion-icon class="icon-info" name="text-outline"></ion-icon>
+                <div class="address">
+                    <ion-icon class="icon-info" name="lock-closed-outline"></ion-icon>
+                    <span>rocketseat.com</span>
+                </div>
+                <ion-icon class="icon-button" name="refresh-outline"></ion-icon>
+            </div>
+            <div class="actions">
+                <ion-icon class="icon-button" name="share-outline"></ion-icon>
+                <ion-icon class="icon-button" name="add-outline"></ion-icon>
+                <ion-icon class="icon-button" name="copy-outline"></ion-icon>
+            </div>
+        </header>
+
+        <aside>
+            <ion-icon class="icon-button active" name="play-circle-outline"></ion-icon>
+            <ion-icon class="icon-button" name="accessibility-outline"></ion-icon>
+            <ion-icon class="icon-button" name="albums-outline"></ion-icon>
+            <ion-icon class="icon-button" name="search-outline"></ion-icon>
+        </aside>
+
+        <main>
+            <div id="ambilight"></div>
+            <div id="video"></div>
+        </main>
+
+        <footer>
+            <div class="interaction">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <g filter="url(#filter0_b_505_90)">
+                        <circle cx="4" cy="4" r="4" fill="white" fill-opacity="0.6" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_b_505_90" x="-4" y="-4" width="16" height="16" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_505_90" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_505_90"
+                                result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="86" height="8" viewBox="0 0 86 8" fill="none">
+                    <g filter="url(#filter0_b_508_167)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 4C0 1.79086 1.4809 0 3.30769 0H82.6923C84.5191 0 86 1.79086 86 4C86 6.20914 84.5191 8 82.6923 8H3.30769C1.4809 8 0 6.20914 0 4Z"
+                            fill="white" fill-opacity="0.6" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_b_508_167" x="-4" y="-4" width="94" height="16" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_508_167" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_508_167"
+                                result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

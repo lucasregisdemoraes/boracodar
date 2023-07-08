@@ -160,5 +160,12 @@
             <td align="center">✅</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/formulario-multi-step"><img width="300px" src="./previews/formulario-multi-step.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>25</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/player-de-vr">Player de VR</a></td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/player-de-vr"><img width="300px" src="./previews/player-de-vr.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
