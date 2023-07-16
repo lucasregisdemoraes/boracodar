@@ -167,5 +167,12 @@
             <td align="center">✅</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/player-de-vr"><img width="300px" src="./previews/player-de-vr.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>27</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/pagina-404">Página 404</a></td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pagina-404"><img width="300px" src="./previews/pagina-404.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>

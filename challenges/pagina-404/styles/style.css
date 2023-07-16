@@ -1,0 +1,97 @@
+body,
+main,
+aside,
+svg,
+h1,
+p,
+div,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: url(../assets/bg.png) no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap-reverse;
+}
+#app main {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+#app main .info {
+  display: grid;
+  gap: 24px;
+}
+#app main .info h1 {
+  color: #d5d5f2;
+  font-size: 40px;
+  line-height: 120%;
+}
+#app main .info p {
+  color: #d5d5f2;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 140%;
+}
+#app main .actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#app main .actions button {
+  color: #e2e2f5;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  background-color: #151557;
+  border-radius: 999px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+#app main .actions button:hover {
+  background-color: #212187;
+}
+#app aside {
+  display: flex;
+  align-items: center;
+}
+#app aside svg {
+  width: 81px;
+  height: 107px;
+}
+#app aside lottie-player {
+  width: 300px;
+  height: 300px;
+}
+
+@media (max-width: 720px) {
+  #app main .actions {
+    justify-content: center;
+  }
+  #app aside svg {
+    width: 40.5px;
+    height: 53px;
+  }
+  #app aside lottie-player {
+    width: 150px;
+    height: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */

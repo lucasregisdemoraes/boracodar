@@ -1,4 +1,5 @@
-    const challenges = ["Conversor de Moedas",
+const challenges = [
+    "Conversor de Moedas",
     "Página de Clima",
     "Tela de Login",
     "KanBan",
@@ -13,5 +14,6 @@
     "Carrinho de Compras",
     "Profile Settings",
     "Formulário Multi Step",
-    "Player de VR"
+    "Player de VR",
+    "Página 404"
 ]
