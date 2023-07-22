@@ -1,0 +1,174 @@
+body,
+main,
+section,
+div,
+img,
+h1,
+ul,
+li,
+i,
+p,
+hr {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+main {
+  display: grid;
+  border-radius: 32px;
+  border: 1px solid #334155;
+  background: rgba(2, 6, 23, 0.8);
+  padding: 60px;
+  gap: 40px;
+  width: 100vw;
+  max-width: 1100px;
+}
+main #content {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+}
+main #content #texts .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  background: #0f172a;
+}
+main #content #texts h1 {
+  color: #f8fafc;
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 700;
+  text-align: center;
+}
+main #content #ai-tools {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 576px;
+}
+main #content #ai-tools .tool {
+  border-radius: 16px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  cursor: pointer;
+  transition: filter 0.5s, border 0.5s;
+}
+main #content #ai-tools .tool:hover, main #content #ai-tools .tool:focus, main #content #ai-tools .tool:focus-within {
+  border-color: #94a3b8;
+  filter: brightness(1.2);
+}
+main #content #ai-tools .tool .icon-text {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+main #content #ai-tools .tool .icon-text i {
+  color: #94a3b8;
+  font-size: 32px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  background: #0f172a;
+}
+main #content #ai-tools .tool .icon-text p {
+  color: #e2e8f0;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 600;
+}
+main #content #ai-tools .tool .ph-arrow-right {
+  font-size: 32px;
+  color: #94a3b8;
+  padding: 16px;
+}
+main hr {
+  color: #334155;
+}
+main #prompt {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+main #prompt .content {
+  flex: 1 0 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  transition: filter 0.5s, border 0.5s;
+}
+main #prompt .content:hover, main #prompt .content:focus, main #prompt .content:focus-within {
+  border-color: #94a3b8;
+  filter: brightness(1.2);
+}
+main #prompt .content:hover {
+  border: 1px solid #334155;
+}
+main #prompt .content:focus-within {
+  border: 1px solid #94a3b8;
+}
+main #prompt .content i {
+  color: #94a3b8;
+  font-size: 32px;
+}
+main #prompt .content input {
+  color: #e2e8f0;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  flex: 1 0 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+main #prompt button {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  cursor: pointer;
+  outline: none;
+  transition: filter 0.5s, border 0.5s;
+}
+main #prompt button:hover, main #prompt button:focus, main #prompt button:focus-within {
+  border-color: #94a3b8;
+  filter: brightness(1.2);
+}
+main #prompt button i {
+  color: #f8fafc;
+  font-size: 32px;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

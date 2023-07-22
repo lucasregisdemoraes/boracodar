@@ -171,8 +171,15 @@
             <td>27</td>
             <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/pagina-404">Página 404</a></td>
             <td align="center">✅</td>
-            <td align="center">✅</td>
+            <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/pagina-404"><img width="300px" src="./previews/pagina-404.jpg" /></a></td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/plataforma-de-ia">Plataforma de IA</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/plataforma-de-ia"><img width="300px" src="./previews/plataforma-de-ia.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>

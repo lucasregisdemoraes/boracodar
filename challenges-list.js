@@ -15,5 +15,6 @@ const challenges = [
     "Profile Settings",
     "Formulário Multi Step",
     "Player de VR",
-    "Página 404"
+    "Página 404",
+    "Plataforma de IA"
 ]

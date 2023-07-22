@@ -1,0 +1,212 @@
+$gray-01: #f8fafc;
+$gray-02: #e2e8f0;
+$gray-03: #94a3b8;
+$gray-04: #334155;
+$gray-05: #1e293b;
+$gray-06: #0f172a;
+$gray-07: #020617;
+
+@mixin heading {
+    color: $gray-01;
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: 700;
+}
+
+@mixin text1 {
+    color: $gray-02;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+@mixin text2 {
+    color: $gray-02;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+@mixin hover {
+    transition: filter 0.5s, border 0.5s;
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+        border-color: $gray-03;
+        filter: brightness(1.2);
+    }
+}
+
+body,
+main,
+section,
+div,
+img,
+h1,
+ul,
+li,
+i,
+p,
+hr {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    border-radius: 32px;
+    border: 1px solid $gray-04;
+    background: rgba(2, 6, 23, 0.80);
+    padding: 60px;
+    gap: 40px;
+    width: 100vw;
+    max-width: 1100px;
+
+    #content {
+        display: grid;
+        gap: 40px;
+        justify-content: center;
+
+        #texts {
+            .icon {
+                width: fit-content;
+                margin: 0 auto;
+                padding: 12px;
+                border-radius: 16px;
+                border: 1px solid $gray-05;
+                background: $gray-06;
+            }
+
+            h1 {
+                @include heading();
+                text-align: center;
+            }
+        }
+
+        #ai-tools {
+            list-style: none;
+            display: grid;
+            gap: 16px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 576px;
+
+            .tool {
+                border-radius: 16px;
+                border: 1px solid $gray-04;
+                background: $gray-06;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 16px;
+                cursor: pointer;
+                @include hover();
+
+                .icon-text {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+
+                    i {
+                        color: $gray-03;
+                        font-size: 32px;
+                        padding: 16px;
+                        border-radius: 16px;
+                        border: 1px solid $gray-05;
+                        background: $gray-06;
+                    }
+
+                    p {
+                        @include text1()
+                    }
+                }
+
+                .ph-arrow-right {
+                    font-size: 32px;
+                    color: $gray-03;
+                    padding: 16px;
+                }
+            }
+        }
+    }
+
+    hr {
+        color: $gray-04;
+    }
+
+    #prompt {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .content {
+            flex: 1 0 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            border-radius: 16px;
+            padding: 16px;
+            border: 1px solid $gray-04;
+            background: $gray-06;
+            @include hover();
+
+            &:hover {
+                border: 1px solid $gray-04;
+            }
+
+            &:focus-within {
+                border: 1px solid $gray-03;
+            }
+
+            i {
+                color: $gray-03;
+                font-size: 32px;
+            }
+
+            input {
+                @include text2();
+                flex: 1 0 0;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                width: 100%;
+            }
+        }
+
+        button {
+            padding: 16px;
+            border-radius: 16px;
+            border: 1px solid $gray-04;
+            background: $gray-06;
+            cursor: pointer;
+            outline: none;
+            @include hover();
+
+            i {
+                color: $gray-01;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+}
