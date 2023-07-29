@@ -16,5 +16,6 @@ const challenges = [
     "Formulário Multi Step",
     "Player de VR",
     "Página 404",
-    "Plataforma de IA"
+    "Plataforma de IA",
+    "Antes e depois com IA"
 ]

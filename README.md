@@ -181,5 +181,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/plataforma-de-ia"><img width="300px" src="./previews/plataforma-de-ia.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>29</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/antes-e-depois-com-ia">Antes e depois com IA</a></td>
+            <td align="center">✅</td>
+            <td align="center">❌</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/antes-e-depois-com-ia"><img width="300px" src="./previews/antes-e-depois-com-ia.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
