@@ -17,5 +17,6 @@ const challenges = [
     "Player de VR",
     "Página 404",
     "Plataforma de IA",
-    "Antes e depois com IA"
+    "Antes e depois com IA",
+    "Recomendação de filmes com IA"
 ]

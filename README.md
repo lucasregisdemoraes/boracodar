@@ -188,5 +188,12 @@
             <td align="center">❌</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/antes-e-depois-com-ia"><img width="300px" src="./previews/antes-e-depois-com-ia.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>30</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/recomendacao-de-filmes-com-ia">Recomendação de filmes com IA</a></td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/recomendacao-de-filmes-com-ia"><img width="300px" src="./previews/recomendacao-de-filmes-com-ia.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
