@@ -18,5 +18,7 @@ const challenges = [
     "Página 404",
     "Plataforma de IA",
     "Antes e depois com IA",
-    "Recomendação de filmes com IA"
+    "Recomendação de filmes com IA",
+    "Transcrição de vídeo com IA",
+    "App de tradução de SQL com IA"
 ]

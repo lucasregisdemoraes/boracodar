@@ -195,5 +195,19 @@
             <td align="center">✅</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/recomendacao-de-filmes-com-ia"><img width="300px" src="./previews/recomendacao-de-filmes-com-ia.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>31</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/transcricao-de-video-com-ia">Transcrição de vídeo com IA</a></td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/transcricao-de-video-com-ia"><img width="300px" src="./previews/transcricao-de-video-com-ia.jpg" /></a></td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/app-de-traducao-de-sql-com-ia">App de tradução de SQL com IA</a></td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/app-de-traducao-de-sql-com-ia"><img width="300px" src="./previews/app-de-traducao-de-sql-com-ia.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
