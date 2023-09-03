@@ -1,0 +1,349 @@
+$purple-normal: #8860e6;
+$purple-dark: #5b409b;
+$gray-dark: #202024;
+$gray-light: #f3f4fe;
+$white: #fff;
+$sucess: #04d361;
+$danger: #ff8f8f;
+$gradient: linear-gradient(90deg, #dee0fc 0%, #996dff 51.04%, #bc9fff 100%);
+
+@mixin headline-40 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+@mixin headline-20 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+@mixin text {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+body,
+div,
+section,
+h1,
+label,
+input,
+button,
+form,
+img,
+span,
+ul,
+li,
+i,
+p {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    #error-message {
+        display: none;
+    }
+
+    .success-element {
+        display: none;
+    }
+
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    padding: 60px 30px;
+    background-color: $gray-dark;
+    background-image: url(../assets/img-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @keyframes appear {
+        from {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+    }
+}
+
+#container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    animation: appear 1s;
+
+    section#left {
+        display: grid;
+        gap: 32px;
+        max-width: 500px;
+
+        h1 {
+            @include headline-40();
+            background: $gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            width: 350px;
+        }
+
+        form {
+            display: grid;
+            gap: 16px;
+            animation: appear 1s;
+
+            label {
+                @include headline-20();
+                color: $gray-light;
+            }
+
+            .input-and-error-wrapper {
+                display: grid;
+                gap: 4px;
+
+                .input-wrapper {
+                    background: $gray-light;
+                    padding: 16px 12px;
+                    align-items: center;
+                    display: flex;
+                    gap: 12px;
+
+                    &:focus-within {
+                        outline: 3px solid darken($color: $gray-light, $amount: 20);
+                    }
+
+                    ion-icon {
+                        font-size: 20px;
+                        color: $gray-dark;
+                    }
+
+                    input {
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        @include text();
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                }
+
+                #error-message {
+                    display: none;
+                    color: $danger;
+                    @include text();
+                }
+            }
+        }
+
+        #success-message {
+            text-transform: uppercase;
+            color: $gray-light;
+            @include headline-20();
+            gap: 16px;
+            display: none;
+            align-items: center;
+
+            ion-icon {
+                color: $sucess;
+                font-size: 32px;
+            }
+        }
+
+        #success-buttons {
+            display: none;
+            gap: 20px;
+        }
+
+        button {
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: $purple-normal;
+            border: none;
+            padding: 22px 40px;
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $purple-dark;
+            }
+        }
+    }
+
+    section#right {
+        background-image: url(../assets/bg-card-ticket.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 45px;
+
+        .ticket {
+            display: flex;
+
+            .event-image {
+                width: 347px;
+            }
+
+            .ticket-info {
+                background-color: $gray-light;
+                padding: 16px;
+                display: flex;
+                gap: 5px;
+                flex-direction: column;
+                justify-content: space-between;
+                min-width: 185px;
+
+                .user-infos {
+                    display: grid;
+                    gap: 8px;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    animation: appear 2s;
+
+                    #image-element {
+                        border-radius: 999px;
+                        height: 128px;
+                        width: 128px;
+                        margin: 0 auto;
+                    }
+
+                    .role {
+                        color: $purple-normal;
+                        font-family: "Space Grotesk", sans-serif;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 125%;
+                        text-transform: uppercase;
+                        letter-spacing: 1.26px;
+                    }
+
+                    #name-element {
+                        color: $gray-dark;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 125%;
+                    }
+                }
+
+                .event {
+                    .event-infos {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 5px;
+
+                        ul {
+                            li {
+                                color: $gray-dark;
+                                font-family: "Space Grotesk", sans-serif;
+                                font-size: 10px;
+                                font-weight: 500;
+                                line-height: 16px;
+                                letter-spacing: 1.05px;
+                                text-transform: uppercase;
+                            }
+
+                            &:last-child {
+                                li {
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .decoration-lines {
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Styles when ticket generate with success
+body.success #container {
+    section#left {
+        #success-message {
+            display: flex;
+            animation: appear 1s;
+        }
+
+        #success-buttons {
+            display: grid;
+            animation: appear 2s;
+        }
+
+        form {
+            display: none;
+        }
+    }
+
+    section#right {
+        animation: appear 1s;
+    }
+}
+
+@media(max-width: 1040px) and (min-width: 888px) {
+    #container section#right {
+        .ticket {
+            .event-image {
+                width: 100%;
+                min-width: 200px;
+            }
+
+            .ticket-info .user-infos {
+                gap: 4px;
+
+                #image-element {
+                    height: 100%;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 888px) {
+    #container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 660px) {
+    #container {
+        width: 100vw;
+
+        section#right {
+            transform: scale(80%);
+            transform-origin: top;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    #container {
+        gap: 0px;
+        height: 600px;
+
+        section#left {
+            transform: scale(80%);
+        }
+
+        section#right {
+            transform: scale(50%);
+        }
+    }
+}

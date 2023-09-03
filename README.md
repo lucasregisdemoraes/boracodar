@@ -209,5 +209,12 @@
             <td align="center">✅</td>
             <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/app-de-traducao-de-sql-com-ia"><img width="300px" src="./previews/app-de-traducao-de-sql-com-ia.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>33</td>
+            <td><a href="https://github.com/lucasregisdemoraes/boracodar/tree/main/challenges/gerador-de-ticket">Gerador de Ticket</a></td>
+            <td align="center">✅</td>
+            <td align="center">✅</td>
+            <td align="center"><a href="https://lucasregisdemoraes.github.io/boracodar/challenges/gerador-de-ticket"><img width="300px" src="./previews/gerador-de-ticket.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>

@@ -1,0 +1,275 @@
+body,
+div,
+section,
+h1,
+label,
+input,
+button,
+form,
+img,
+span,
+ul,
+li,
+i,
+p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 60px 30px;
+  background-color: #202024;
+  background-image: url(../assets/img-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body #error-message {
+  display: none;
+}
+body .success-element {
+  display: none;
+}
+@keyframes appear {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+
+#container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  animation: appear 1s;
+}
+#container section#left {
+  display: grid;
+  gap: 32px;
+  max-width: 500px;
+}
+#container section#left h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  line-height: 130%;
+  background: linear-gradient(90deg, #dee0fc 0%, #996dff 51.04%, #bc9fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 350px;
+}
+#container section#left form {
+  display: grid;
+  gap: 16px;
+  animation: appear 1s;
+}
+#container section#left form label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  line-height: 160%;
+  color: #f3f4fe;
+}
+#container section#left form .input-and-error-wrapper {
+  display: grid;
+  gap: 4px;
+}
+#container section#left form .input-and-error-wrapper .input-wrapper {
+  background: #f3f4fe;
+  padding: 16px 12px;
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+#container section#left form .input-and-error-wrapper .input-wrapper:focus-within {
+  outline: 3px solid #959ef6;
+}
+#container section#left form .input-and-error-wrapper .input-wrapper ion-icon {
+  font-size: 20px;
+  color: #202024;
+}
+#container section#left form .input-and-error-wrapper .input-wrapper input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 160%;
+  font-size: 14px;
+  width: 100%;
+}
+#container section#left form .input-and-error-wrapper #error-message {
+  display: none;
+  color: #ff8f8f;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 160%;
+}
+#container section#left #success-message {
+  text-transform: uppercase;
+  color: #f3f4fe;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  line-height: 160%;
+  gap: 16px;
+  display: none;
+  align-items: center;
+}
+#container section#left #success-message ion-icon {
+  color: #04d361;
+  font-size: 32px;
+}
+#container section#left #success-buttons {
+  display: none;
+  gap: 20px;
+}
+#container section#left button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #8860e6;
+  border: none;
+  padding: 22px 40px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#container section#left button:hover {
+  background-color: #5b409b;
+}
+#container section#right {
+  background-image: url(../assets/bg-card-ticket.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 45px;
+}
+#container section#right .ticket {
+  display: flex;
+}
+#container section#right .ticket .event-image {
+  width: 347px;
+}
+#container section#right .ticket .ticket-info {
+  background-color: #f3f4fe;
+  padding: 16px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 185px;
+}
+#container section#right .ticket .ticket-info .user-infos {
+  display: grid;
+  gap: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  animation: appear 2s;
+}
+#container section#right .ticket .ticket-info .user-infos #image-element {
+  border-radius: 999px;
+  height: 128px;
+  width: 128px;
+  margin: 0 auto;
+}
+#container section#right .ticket .ticket-info .user-infos .role {
+  color: #8860e6;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 125%;
+  text-transform: uppercase;
+  letter-spacing: 1.26px;
+}
+#container section#right .ticket .ticket-info .user-infos #name-element {
+  color: #202024;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 125%;
+}
+#container section#right .ticket .ticket-info .event .event-infos {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+#container section#right .ticket .ticket-info .event .event-infos ul li {
+  color: #202024;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+}
+#container section#right .ticket .ticket-info .event .event-infos ul:last-child li {
+  font-weight: 700;
+}
+#container section#right .ticket .ticket-info .event .decoration-lines {
+  width: 100%;
+  margin-top: 10px;
+}
+
+body.success #container section#left #success-message {
+  display: flex;
+  animation: appear 1s;
+}
+body.success #container section#left #success-buttons {
+  display: grid;
+  animation: appear 2s;
+}
+body.success #container section#left form {
+  display: none;
+}
+body.success #container section#right {
+  animation: appear 1s;
+}
+
+@media (max-width: 1040px) and (min-width: 888px) {
+  #container section#right .ticket .event-image {
+    width: 100%;
+    min-width: 200px;
+  }
+  #container section#right .ticket .ticket-info .user-infos {
+    gap: 4px;
+  }
+  #container section#right .ticket .ticket-info .user-infos #image-element {
+    height: 100%;
+    width: 80px;
+  }
+}
+@media (max-width: 888px) {
+  #container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+}
+@media (max-width: 660px) {
+  #container {
+    width: 100vw;
+  }
+  #container section#right {
+    transform: scale(80%);
+    transform-origin: top;
+  }
+}
+@media (max-width: 520px) {
+  #container {
+    gap: 0px;
+    height: 600px;
+  }
+  #container section#left {
+    transform: scale(80%);
+  }
+  #container section#right {
+    transform: scale(50%);
+  }
+}/*# sourceMappingURL=styles.css.map */

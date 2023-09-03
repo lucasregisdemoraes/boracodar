@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Ticket</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <section id="left">
+            <h1>GERE SEU TICKET E COMPARTILHE COM O MUNDO</h1>
+            <form id="user-form">
+                <label for="github-user">DIGITE SEU USUÁRIO DO GITHUB</label>
+                <div class="input-and-error-wrapper">
+                    <div class="input-wrapper">
+                        <ion-icon name="logo-github"></ion-icon>
+                        <input autocomplete="off" type="text" name="github-user" id="github-user"
+                            placeholder="Nome de usuário">
+                    </div>
+                    <p id="error-message">Usuário inválido. Verifique e tente novamente.</p>
+                </div>
+                <button type="submit">Gerar meu Ticket</button>
+            </form>
+            <p id="success-message"><ion-icon name="checkmark-circle-outline"></ion-icon>Ticket gerado com sucesso</p>
+            <div id="success-buttons">
+                <button id="download-button">Fazer download</button>
+                <button id="another-ticket-button">Gerar outro Ticket</button>
+            </div>
+        </section>
+        <section id="right">
+            <div class="ticket">
+                <img class="event-image" src="./assets/img-cover-ticket.png" alt="Imagem do evento IA para devs">
+                <div class="ticket-info">
+                    <div class="user-infos">
+                        <img id="image-element" src="./assets/img-avatar.png" alt="Imagem de usuário">
+                        <span class="role">Tripulante</span>
+                        <p id="name-element">Seu nome aqui</p>
+                    </div>
+                    <div class="event">
+                        <div class="event-infos">
+                            <ul class="event-property">
+                                <li>Evento</li>
+                                <li>Data</li>
+                                <li>Hora</li>
+                            </ul>
+                            <ul class="event-value">
+                                <li>IA para devs</li>
+                                <li>14 - 16 Ago. 2023</li>
+                                <li>Ao vivo - 19h</li>
+                            </ul>
+                        </div>
+                        <img class="decoration-lines" src="./assets/lines-svg.svg" alt="Linhas para enfeite">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
